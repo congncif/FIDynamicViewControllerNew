@@ -1,0 +1,33 @@
+{
+  "name": "FIDynamicViewController",
+  "version": "0.1.0",
+  "summary": "Frameworks to create dynamic complex view controller",
+  "description": "Frameworks to create dynamic complex view controller",
+  "homepage": "https://github.com/congncif/FIDynamicViewController",
+  "license": "MIT",
+  "authors": {
+    "NGUYEN CHI CONG": "congnc.if@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/congncif/FIDynamicViewController.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/congncif",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "FIDynamicViewController": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreGraphics"
+  ],
+  "ios": {
+    "vendored_frameworks": "Pod/FIDynamicViewController.framework"
+  }
+}
