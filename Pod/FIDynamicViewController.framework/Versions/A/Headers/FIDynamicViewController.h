@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 NGUYEN CHI CONG. All rights reserved.
 //
 
-//Designed by [iF] Solution - Version 1.2.1 updated on 8/17/15
+//Designed by [iF] Solution - Version 1.2.1 updated on 11/12/15
 
 /**------------------------**
  Protocols

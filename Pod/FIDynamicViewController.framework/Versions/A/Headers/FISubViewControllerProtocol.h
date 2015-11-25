@@ -24,7 +24,9 @@
  [Function] Functions to call
 */
 - (void)updatePresenterWithBlock: (void(^)()) block;
-- (CGRect)frameForLayout;
+
+- (CGFloat)heightForLayout;
+
 - (void)needUpdateLayoutAnimated: (BOOL)animated;
 
 /**
