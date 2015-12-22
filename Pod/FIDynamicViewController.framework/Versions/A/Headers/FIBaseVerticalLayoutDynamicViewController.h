@@ -41,6 +41,12 @@ static Class FIScrollView;
 - (void)layoutSubViewController: (id)controller;
 - (void)layoutSubViewController: (id)controller animated: (BOOL)animated;
 
+- (void)generateSubControllersWithBeignBlock: (void(^)())startBlock
+                                   mainBlock: (void(^)())mainBlock
+                               finishedBlock: (void(^)())finishedBlock;
+
+- (void)generateSubControllersWithBlock: (void(^)())block;
+
 /**
  *
  *  Override this method to custom

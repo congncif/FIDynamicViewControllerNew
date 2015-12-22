@@ -22,3 +22,4 @@
 
 #import "FIBaseVerticalLayoutDynamicViewController.h"
 #import "FIDynamicAction.h"
+#import "FIBaseDynamicPreseneter.h"
