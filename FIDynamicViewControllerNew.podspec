@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FIDynamicViewControllerNew"
-  s.version          = "1.4.1"
+  s.version          = "1.4.2"
   s.summary          = "Frameworks to create dynamic complex view controller"
   s.description      = <<-DESC
                        FIDynamicViewController built makes it easy to create a dynamic and flexible view controller with its contents.
