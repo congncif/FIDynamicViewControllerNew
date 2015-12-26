@@ -39,7 +39,7 @@ static Class __nullable FIScrollView;
 /** Remove all sub controllers in contents */
 - (void)popAllSubContents;
 /** Remove all sub controllers include header & footer */
-- (void)popAllSubViewControllersWithFinishedBlock: (void(^ __nullable)())finishedBlock;
+- (void)popAllSubViewControllers;
 
 /** configure header | footer = nil if want to remove it */
 - (void)configureHeaderViewController: (UIViewController <FISubViewControllerProtocol>* __nullable)childController;
