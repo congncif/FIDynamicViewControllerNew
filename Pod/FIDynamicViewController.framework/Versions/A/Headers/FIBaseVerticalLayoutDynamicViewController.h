@@ -9,54 +9,72 @@
 #import <UIKit/UIKit.h>
 #import "FIBaseDynamicViewController.h"
 
-static Class FIScrollView;
+static Class __nullable FIScrollView;
 
 @interface FIBaseVerticalLayoutDynamicViewController : FIBaseDynamicViewController
 
-@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIScrollView * __nonnull scrollView;
 
-@property (nonatomic, readonly) NSMutableArray *subViewControllers;
+@property (nonatomic, readonly) NSMutableArray * __nullable subViewControllers;
 
 @property (nonatomic) UIEdgeInsets defaultInset;
+
+@property (nonatomic, assign) BOOL layoutSubControllerImmediately;
+@property (nonatomic, assign) BOOL layoutWithAnimation;
+
+@property (nonatomic, copy) NSString * __nullable animationType;
+@property (nonatomic, copy) NSString * __nullable animationDirection;
 
 /**
  *
  *  Functions
  *
  **/
-- (void)pushSubViewController:(UIViewController *)childController animated: (BOOL)animated;
-- (void)popSubViewController:(UIViewController *)childController animated: (BOOL)animated;
+- (void)pushSubViewController:(UIViewController<FISubViewControllerProtocol> * __nonnull)childController;
+- (void)popSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController ;
 
-- (void)pushSubViewController:(UIViewController *)childController insertAtIndex: (NSInteger)index animated: (BOOL)animated ;
-- (void)popSubViewControllerAtIndex: (NSInteger)index animated: (BOOL)animated;
+- (void)pushSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController insertAtIndex: (NSInteger)index ;
+- (void)popSubViewControllerAtIndex: (NSInteger)index ;
 
-- (void)configureHeaderViewController: (UIViewController *)childController animated:(BOOL)animated;
-- (void)configureFooterViewController: (UIViewController *)childController animated:(BOOL)animated;
+/** Remove all sub controllers in contents */
+- (void)popAllSubContents;
+/** Remove all sub controllers include header & footer */
+- (void)popAllSubViewControllersWithFinishedBlock: (void(^ __nullable)())finishedBlock;
+
+/** configure header | footer = nil if want to remove it */
+- (void)configureHeaderViewController: (UIViewController <FISubViewControllerProtocol>* __nullable)childController;
+- (void)configureFooterViewController: (UIViewController <FISubViewControllerProtocol>* __nullable)childController;
 
 - (void)layoutSubViewControllers;
 
 - (void)invalidDyamicLayout;
 - (void)invalidDyamicLayoutAnimated: (BOOL)animated;
 
-- (void)layoutSubViewController: (id)controller;
-- (void)layoutSubViewController: (id)controller animated: (BOOL)animated;
+- (void)layoutSubViewController: (id __nonnull)controller;
+- (void)layoutSubViewController: (id __nonnull)controller animated: (BOOL)animated;
+- (void)invalidDyamicLayoutAnimatedWithCompletion: (void (^ __nullable)(BOOL finished))completion;
 
-- (void)generateSubControllersWithBeignBlock: (void(^)())startBlock
-                                   mainBlock: (void(^)())mainBlock
-                               finishedBlock: (void(^)())finishedBlock;
-
-- (void)generateSubControllersWithBlock: (void(^)())block;
+/** Set up subviewcontrollers with main block run in background */
+- (void)generateSubControllersWithBeignBlock: (void(^ __nullable)())startBlock
+                                   mainBlock: (void(^ __nullable)())mainBlock
+                               finishedBlock: (void(^ __nullable)())finishedBlock;
+- (void)generateSubControllersWithBlock: (void(^ __nullable)())block;
 
 /**
  *
  *  Override this method to custom
  *
  **/
+/** Run in main thread */
 - (void)beginGenerateAndConfigureSubViewControllers;
+
+/** Run in background for generating sub view controllers */
 - (void)generateAndConfigureSubViewControllers;
+
+/** Run in main thread */
 - (void)finishGenerateAndConfigureSubViewControllers;
 
-+ (void)setClassForScrollView: (Class)ScrollViewClass;
-+ (Class)classForScrollView;
++ (void)setClassForScrollView: (Class __nonnull)ScrollViewClass;
++ (Class _Nonnull)classForScrollView;
 
 @end

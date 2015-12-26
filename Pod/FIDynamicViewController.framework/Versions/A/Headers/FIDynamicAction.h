@@ -10,10 +10,10 @@
 
 @interface FIDynamicAction : NSObject
 
-- (instancetype)initWithSelectorName: (NSString *)selector withObject: (id)object;
+- (instancetype _Nonnull)initWithSelectorName: (NSString *__nullable)selector withObject: (id __nullable)object;
 
-@property (nonatomic, strong) NSString *selector;
-@property (nonatomic, strong) id object;
+@property (nonatomic, strong) NSString *__nullable selector;
+@property (nonatomic, strong) id __nullable object;
 @property (nonatomic) BOOL performOnBackground;
 
 @end

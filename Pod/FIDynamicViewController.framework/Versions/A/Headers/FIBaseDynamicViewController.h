@@ -14,24 +14,26 @@
 /**
   Model for storing data model in view controller
 */
-@property (nonatomic, strong) id dynamicPresenter;
+@property (nonatomic, strong) id __nonnull dynamicPresenter;
 
 /**
   Call this method to update model presenter
 */
-- (void)updatePresenterWithBlock: (void(^)()) block;
+- (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
 
 /**
   Override this methods to handle when presenter updated
 */
 - (void)presenterNeedUpdate;
 
+- (void)presenterDidLoad;
+
 /**
   Functions
 */
 - (void)configurePresenterForSubControllers;
-- (void)addSubViewController:(UIViewController *)childController withConfiguration: (void(^)(UIView *childView))configurationBlock;
-- (void)removeSubViewController:(UIViewController *)childController;
+- (void)addSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController withConfiguration: (void(^ __nullable)(UIView * __nonnull childView))configurationBlock;
+- (void)removeSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController;
 
 
 @end

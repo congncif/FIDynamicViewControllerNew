@@ -20,12 +20,14 @@
 /**
     Call this method when update presenter model
 */
-- (void)updatePresenterWithBlock: (void(^)()) block;
+- (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
 
 /**
   Override this methods to handle when presenter updated
 */
 - (void)presenterNeedUpdate;
+
+- (void)presenterDidLoad;
 
 /**
   Call this method when has update layout at sub view controller
