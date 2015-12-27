@@ -22,6 +22,8 @@ static Class __nullable FIScrollView;
 @property (nonatomic, assign) BOOL layoutSubControllerImmediately;
 @property (nonatomic, assign) BOOL layoutWithAnimation;
 
+@property (nonatomic, readonly, getter=isGenerating) BOOL generating;
+
 @property (nonatomic, copy) NSString * __nullable animationType;
 @property (nonatomic, copy) NSString * __nullable animationDirection;
 
@@ -35,6 +37,8 @@ static Class __nullable FIScrollView;
 
 - (void)pushSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController insertAtIndex: (NSInteger)index ;
 - (void)popSubViewControllerAtIndex: (NSInteger)index ;
+
+- (void)prepareInBackgroundAddSubController: (UIViewController <FISubViewControllerProtocol> * __nonnull(^ __nonnull)(id __nullable parameters))block withParameters: (id __nullable)paramters;
 
 /** Remove all sub controllers in contents */
 - (void)popAllSubContents;
