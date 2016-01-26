@@ -22,12 +22,16 @@
 */
 - (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
 
+- (void)updatePresenterProperty:(SEL __nonnull) selector withBlock:(void(^ __nullable)( id __nullable value)) block;
+
 /**
   Override this methods to handle when presenter updated
 */
 - (void)presenterNeedUpdate;
 
 - (void)presenterDidLoad;
+
+- (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
 /**
   Call this method when has update layout at sub view controller

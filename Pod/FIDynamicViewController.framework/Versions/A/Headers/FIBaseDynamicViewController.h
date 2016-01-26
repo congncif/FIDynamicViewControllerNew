@@ -8,18 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "FIDynamicViewControllerProtocol.h"
+#import "FIDynamicPresenterProtocol.h"
 
 @interface FIBaseDynamicViewController : UIViewController<FIDynamicViewControllerProtocol>
 
 /**
   Model for storing data model in view controller
 */
-@property (nonatomic, strong) id __nonnull dynamicPresenter;
+@property (nonatomic, readonly) id <FIDynamicPresenterProtocol>__nullable dynamicPresenter;
+
+- (void)setDynamicPresenterModel:(id <FIDynamicPresenterProtocol>_Nullable)dynamicPresenter;
 
 /**
   Call this method to update model presenter
 */
 - (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
+- (void)updatePresenterProperty:(SEL __nonnull) selector withBlock:(void(^ __nullable)( id __nullable value)) block;
 
 /**
   Override this methods to handle when presenter updated
@@ -27,6 +31,8 @@
 - (void)presenterNeedUpdate;
 
 - (void)presenterDidLoad;
+
+- (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
 /**
   Functions

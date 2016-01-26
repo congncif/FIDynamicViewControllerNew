@@ -14,7 +14,7 @@
 /**
  Presenter model for store, exchange data
 */
-@property (nonatomic, strong) id dynamicPresenter;
+@property (nonatomic, readonly) id dynamicPresenter;
 
 /**
  *
@@ -31,6 +31,8 @@
  [Function] Call when need send update presenter notification manually
 */
 - (void)presenterNeedUpdate;
+
+- (void)presenterChangedValue: (id)value keyPath:(NSString *)keyPath;
 
 /**
  [Function] Send custom action to sub view controllers.

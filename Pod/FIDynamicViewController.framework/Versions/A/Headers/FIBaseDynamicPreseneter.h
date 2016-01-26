@@ -12,4 +12,6 @@
 
 @interface FIBaseDynamicPreseneter : NSObject <FIDynamicPresenterProtocol>
 
+@property (nonatomic, weak) id<FIDynamicObservableDelegate> delegate;
+
 @end

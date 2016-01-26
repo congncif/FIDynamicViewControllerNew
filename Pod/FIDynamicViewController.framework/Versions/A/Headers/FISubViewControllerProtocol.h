@@ -39,6 +39,7 @@
  [Implementation] To handler when model changed
 */
 - (void)presenterNeedUpdate;
+- (void)presenterChangedValue: (id)value keyPath:(NSString *)keyPath;
 
 /**
  [Implementation] Recive action from container view controller
