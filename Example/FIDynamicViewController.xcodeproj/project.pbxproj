@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		207AE7121C05C20D00E9BE7D /* FIDynamicViewControllerNew.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 207AE7111C05C20D00E9BE7D /* FIDynamicViewControllerNew.podspec */; };
+		201ADCFD1C77229E006FE2F7 /* FIDynamicViewControllerNew.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 201ADCFC1C77229E006FE2F7 /* FIDynamicViewControllerNew.podspec */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,7 +40,7 @@
 		00FBF8736E42EF6DCE770930 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		05F33851353160E379554D0D /* Pods_FIDynamicViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIDynamicViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C61B91A3A36C25A71BC99C /* Pods-FIDynamicViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDynamicViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIDynamicViewController_Tests/Pods-FIDynamicViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		207AE7111C05C20D00E9BE7D /* FIDynamicViewControllerNew.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FIDynamicViewControllerNew.podspec; sourceTree = "<group>"; };
+		201ADCFC1C77229E006FE2F7 /* FIDynamicViewControllerNew.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FIDynamicViewControllerNew.podspec; path = ../FIDynamicViewControllerNew.podspec; sourceTree = "<group>"; };
 		25ACFED5E7AFE03C30793923 /* Pods-FIDynamicViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDynamicViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIDynamicViewController_Example/Pods-FIDynamicViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2AB51499E6D2A5346AEECCAD /* Pods-FIDynamicViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDynamicViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIDynamicViewController_Tests/Pods-FIDynamicViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4978B2007314FEEC0B265882 /* Pods-FIDynamicViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDynamicViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIDynamicViewController_Example/Pods-FIDynamicViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				207AE7111C05C20D00E9BE7D /* FIDynamicViewControllerNew.podspec */,
+				201ADCFC1C77229E006FE2F7 /* FIDynamicViewControllerNew.podspec */,
 				00FBF8736E42EF6DCE770930 /* README.md */,
 				F68D26505A372D66D70B9A62 /* LICENSE */,
 			);
@@ -280,7 +280,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				207AE7121C05C20D00E9BE7D /* FIDynamicViewControllerNew.podspec in Resources */,
+				201ADCFD1C77229E006FE2F7 /* FIDynamicViewControllerNew.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
