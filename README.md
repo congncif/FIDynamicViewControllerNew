@@ -7,7 +7,11 @@
 
 ## Usage
 
+Easy to build and manage complex view controllers
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Example: https://github.com/congncif/HomePageExample
 
 ## Requirements
 
