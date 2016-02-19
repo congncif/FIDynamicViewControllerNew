@@ -37,7 +37,7 @@
 		1508F69BD205F1269CC87CF8FD3F6CE2 /* Pods-FIDynamicViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FIDynamicViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		16D4E39A0F825B1CA87EFF6025A8CD78 /* Pods_FIDynamicViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIDynamicViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1998072A72DDB9D331C89DB7F616286C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		207AE7101C05C1DA00E9BE7D /* FIDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIDynamicViewController.h; sourceTree = "<group>"; };
+		207AE7101C05C1DA00E9BE7D /* FIDynamicViewControllerNew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIDynamicViewControllerNew.h; sourceTree = "<group>"; };
 		247C5D1A3246EC260F5497D687DBDCEB /* FIDynamicViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIDynamicViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		45683194EC6A1A6F2D45A02643884ED1 /* Pods-FIDynamicViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FIDynamicViewController_Example.modulemap"; sourceTree = "<group>"; };
 		4892F484B4C1A22E6E2A2CDF7F6D0DC4 /* Pods-FIDynamicViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FIDynamicViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		207AE70D1C05C1C100E9BE7D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				207AE7101C05C1DA00E9BE7D /* FIDynamicViewController.h */,
+				207AE7101C05C1DA00E9BE7D /* FIDynamicViewControllerNew.h */,
 			);
 			name = Classes;
 			path = Pod/Classes;

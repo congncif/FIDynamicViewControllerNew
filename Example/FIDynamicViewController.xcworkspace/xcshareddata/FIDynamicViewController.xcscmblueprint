@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "735760A4EECB032AC8A2C3069841708E540A5AC8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "735760A4EECB032AC8A2C3069841708E540A5AC8" : 0,
+    "471CCC3D9769116FE2B78B65C3B11884C943806F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ACF282D7-D11C-4017-B26A-5D649F90B4AC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "735760A4EECB032AC8A2C3069841708E540A5AC8" : "FIDynamicViewControllerNew\/",
+    "471CCC3D9769116FE2B78B65C3B11884C943806F" : "FIDynamicViewController"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FIDynamicViewController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/FIDynamicViewController.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/congncif\/FIDynamicViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "471CCC3D9769116FE2B78B65C3B11884C943806F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/congncif\/FIDynamicViewControllerNew.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "735760A4EECB032AC8A2C3069841708E540A5AC8"
+    }
+  ]
+}
