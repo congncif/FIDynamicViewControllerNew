@@ -29,4 +29,4 @@ NGUYEN CHI CONG, congnc.if@gmail.com
 FIDynamicViewController is available under the MIT license. See the LICENSE file for more info.
 
 ## Some apps
-[![IMAGE ALT TEXT HERE](http://i.imgur.com/BOlsjZM.png)](https://youtu.be/zTPVMOvEQ4I)
+[![IMAGE ALT TEXT HERE](http://i.imgur.com/br6X0Bv.png)](https://youtu.be/zTPVMOvEQ4I)
