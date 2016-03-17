@@ -14,7 +14,7 @@
 /**
  Presenter model for store, exchange data
 */
-@property (nonatomic, readonly) id dynamicPresenter;
+@property (nonatomic, readonly) id dynamicModel;
 
 /**
  *

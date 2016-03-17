@@ -7,7 +7,7 @@
 //
 
 @protocol FIDynamicObservableDelegate;
-@protocol FIDynamicPresenterProtocol <NSObject>
+@protocol FIDynamicModelProtocol <NSObject>
 
 @property (nonatomic, weak) id<FIDynamicObservableDelegate> delegate;
 
@@ -17,6 +17,6 @@
 
 @protocol FIDynamicObservableDelegate <NSObject>
 
-- (void)presenterModel:(id<FIDynamicPresenterProtocol>)dynamicModel changedValue:(id)value keyPath:(NSString *)keyPath;
+- (void)presenterModel:(id<FIDynamicModelProtocol>)dynamicModel changedValue:(id)value keyPath:(NSString *)keyPath;
 
 @end

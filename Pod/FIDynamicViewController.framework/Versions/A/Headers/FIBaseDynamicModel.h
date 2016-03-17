@@ -10,7 +10,7 @@
 
 #import "FIDynamicPresenterProtocol.h"
 
-@interface FIBaseDynamicPreseneter : NSObject <FIDynamicModelProtocol>
+@interface FIBaseDynamicModel : NSObject <FIDynamicModelProtocol>
 
 @property (nonatomic, weak) id<FIDynamicObservableDelegate> delegate;
 

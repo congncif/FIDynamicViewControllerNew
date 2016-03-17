@@ -15,9 +15,9 @@
 /**
   Model for storing data model in view controller
 */
-@property (nonatomic, readonly) id <FIDynamicPresenterProtocol>__nullable dynamicPresenter;
+@property (nonatomic, readonly) id <FIDynamicModelProtocol>__nullable dynamicModel;
 
-- (void)setDynamicPresenterModel:(id <FIDynamicPresenterProtocol>_Nullable)dynamicPresenter;
+- (void)setDynamicPresenterModel:(id <FIDynamicModelProtocol>_Nullable)dynamicModel;
 
 /**
   Call this method to update model presenter

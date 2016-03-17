@@ -144,16 +144,7 @@ static Class __nullable FIScrollView;
 + (void)setClassForScrollView: (Class __nonnull)ScrollViewClass;
 + (Class _Nonnull)classForScrollView;
 
-#pragma mark - Deprecated Methods — DO NOT USE
-- (void)pushSubViewController:(UIViewController<FISubViewControllerProtocol> * __nonnull)childController __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use addSubViewController: instead.")));
-- (void)popSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use removeSubViewController: instead.")));
 
-- (void)pushSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController insertAtIndex: (NSInteger)index __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use insertSubViewController:atIndex: instead.")));
-- (void)popSubViewControllerAtIndex: (NSInteger)index __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use removeSubViewControllerAtIndex: instead.")));
-
-- (void)prepareInBackgroundAddSubController: (UIViewController <FISubViewControllerProtocol> * __nonnull(^ __nonnull)(id __nullable parameters))block withParameters: (id __nullable)paramters;
-- (void)popAllSubContents __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use removeAllSubContents: instead.")));
-- (void)popAllSubViewControllers __attribute__((deprecated("This method has been deprecated and will be removed in FIDynamicViewController 1.7. Please use removeAllSubViewControllers: instead.")));
 
 
 @end

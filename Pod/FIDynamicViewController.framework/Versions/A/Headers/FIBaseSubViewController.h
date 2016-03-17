@@ -14,7 +14,7 @@
 
 @interface FIBaseSubViewController : UIViewController <FISubViewControllerProtocol>
 
-@property (nonatomic, weak) id dynamicPresenter;
+@property (nonatomic, weak) id dynamicModel;
 @property (nonatomic, weak) id<FIDynamicViewControllerProtocol> containerController;
 
 /**
