@@ -27,7 +27,7 @@
 
 - (CGFloat)heightForLayout;
 
-- (void)needUpdateLayoutAnimated: (BOOL)animated;
+- (void)needUpdateLayout;
 
 /**
  *

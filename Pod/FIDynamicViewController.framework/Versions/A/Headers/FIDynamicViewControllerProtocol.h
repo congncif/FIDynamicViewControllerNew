@@ -46,7 +46,7 @@
  [Implementation] Delegate Methods sent from subviewcontroller
 */
 - (void)subViewController: (id<FISubViewControllerProtocol>) subViewController changedPresenter: (id)presenter;
-- (void)subViewControllerNeedUpdateLayout: (id<FISubViewControllerProtocol>) subViewController animated:(BOOL)animated;
+- (void)subViewControllerNeedUpdateLayout: (id<FISubViewControllerProtocol>) subViewController;
 
 @optional
 /**

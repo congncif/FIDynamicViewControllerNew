@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "FIBaseDynamicViewController.h"
 
-static Class __nullable FIScrollView;
-
 @interface FIBaseVerticalLayoutDynamicViewController : FIBaseDynamicViewController
 
 @property (nonatomic, strong) UIScrollView * __nonnull scrollView;
@@ -20,7 +18,7 @@ static Class __nullable FIScrollView;
 @property (nonatomic) UIEdgeInsets defaultInset;
 
 @property (nonatomic, assign) BOOL layoutSubControllerImmediately;
-@property (nonatomic, assign) BOOL layoutWithAnimation;
+@property (atomic, assign) BOOL layoutWithAnimation;
 
 @property (nonatomic, readonly, getter=isGenerating) BOOL generating;
 
@@ -135,7 +133,7 @@ static Class __nullable FIScrollView;
 /** Run in main thread */
 - (void)beginGenerateAndConfigureSubViewControllers;
 
-/** Run in background for generating sub view controllers */
+/** Run in async for generating sub view controllers */
 - (void)generateAndConfigureSubViewControllers;
 
 /** Run in main thread */

@@ -21,7 +21,6 @@
 
 
 
-
 /**
     Call this method when update presenter model
 */
@@ -30,7 +29,7 @@
 /**
  Call this method when has update layout at sub view controller
  */
-- (void)needUpdateLayoutAnimated: (BOOL)animated;
+- (void)needUpdateLayout;
 
 
 
