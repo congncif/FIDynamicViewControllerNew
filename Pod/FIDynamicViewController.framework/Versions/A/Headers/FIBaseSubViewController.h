@@ -14,16 +14,30 @@
 
 @interface FIBaseSubViewController : UIViewController <FISubViewControllerProtocol>
 
-@property (nonatomic, weak) id dynamicModel;
-@property (nonatomic, weak) id<FIDynamicViewControllerProtocol> containerController;
+@property (nonatomic, weak) UIView * __nullable fitContentView;
+@property (nonatomic, weak) id __nullable dynamicModel;
+@property (nonatomic, weak) id<FIDynamicViewControllerProtocol> __nullable containerController;
+
+
+
+
 
 /**
     Call this method when update presenter model
 */
 - (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
-
 - (void)updatePresenterProperty:(SEL __nonnull) selector withBlock:(void(^ __nullable)( id __nullable value)) block;
+/**
+ Call this method when has update layout at sub view controller
+ */
+- (void)needUpdateLayoutAnimated: (BOOL)animated;
 
+
+
+
+
+#pragma mark - Override
+/*------------------------------------------------------*/
 /**
   Override this methods to handle when presenter updated
 */
@@ -33,9 +47,6 @@
 
 - (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
-/**
-  Call this method when has update layout at sub view controller
-*/
-- (void)needUpdateLayoutAnimated: (BOOL)animated;
+
 
 @end

@@ -19,20 +19,12 @@
 
 - (void)setDynamicPresenterModel:(id <FIDynamicModelProtocol>_Nullable)dynamicModel;
 
+
 /**
   Call this method to update model presenter
 */
 - (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
 - (void)updatePresenterProperty:(SEL __nonnull) selector withBlock:(void(^ __nullable)( id __nullable value)) block;
-
-/**
-  Override this methods to handle when presenter updated
-*/
-- (void)presenterNeedUpdate;
-
-- (void)presenterDidLoad;
-
-- (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
 /**
   Functions
@@ -41,5 +33,19 @@
 - (void)addSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController withConfiguration: (void(^ __nullable)(UIView * __nonnull childView))configurationBlock;
 - (void)removeSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController;
 
+
+
+
+
+#pragma mark - Override
+/*------------------------------------------------------*/
+/**
+ Override this methods to handle when presenter updated
+ */
+- (void)presenterNeedUpdate;
+
+- (void)presenterDidLoad;
+
+- (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
 @end
