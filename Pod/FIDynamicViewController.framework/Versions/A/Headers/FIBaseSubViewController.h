@@ -48,4 +48,8 @@
 
 
 
+#pragma mark - deprecated
+/*------------------------------------------------------*/
+- (void)needUpdateLayoutAnimated:(BOOL)animated __attribute__((deprecated("This method has been deprecated and will be removed in laster version. Please use needUpdateLayout instead.")));
+
 @end

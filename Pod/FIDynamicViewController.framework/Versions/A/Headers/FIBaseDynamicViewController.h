@@ -48,4 +48,9 @@
 
 - (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
 
+
+#pragma mark - deprecated
+/*------------------------------------------------------*/
+- (void)subViewControllerNeedUpdateLayout:(id<FISubViewControllerProtocol> __nullable) subViewController animated:(BOOL)animated __attribute__((deprecated("This method has been deprecated and will be removed in laster version. Please use subViewControllerNeedUpdateLayout: instead.")));
+
 @end
