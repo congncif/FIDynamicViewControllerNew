@@ -26,9 +26,6 @@ For example, when you want to create a view controller with the components withi
   s.requires_arc = true
 
   #s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'FIDynamicViewController' => ['Pod/Assets/*.png']
-  }
 
 #s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit', 'CoreGraphics'
