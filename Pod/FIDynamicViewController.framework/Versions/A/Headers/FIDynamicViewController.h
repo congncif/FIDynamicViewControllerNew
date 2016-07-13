@@ -22,7 +22,6 @@
 
 #import "FIBaseVerticalLayoutDynamicViewController.h"
 #import "FIDynamicAction.h"
-#import "FIDataInfoAction.h"
 #import "FIBaseDynamicModel.h"
 
 #import "UIView+animation.h"
